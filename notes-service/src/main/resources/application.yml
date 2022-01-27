@@ -1,5 +1,17 @@
 spring:
-  jpa:
-    generate-ddl: true
-server:
-  port: 8081
+  application:
+    name: notes
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://localhost:8888
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      persons:
+        properties:
+          minimumNumberOfCalls: 500
+feign:
+  circuitbreaker:
+    enabled: true

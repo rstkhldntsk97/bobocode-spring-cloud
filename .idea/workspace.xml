@@ -4,8 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="changed port for config-service">
+    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="changed config-import">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_annotations_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circuitbreaker_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circularbuffer_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_consumer_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_core_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_framework_common_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_micrometer_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_ratelimiter_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_retry_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring_boot2_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_timelimiter_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_0_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_match_0_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_circuitbreaker_resilience4j_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_circuitbreaker_resilience4j_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/notes-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/client/PersonServiceFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/dto/NoteDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/dto/PersonDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/service/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bootstrap_3_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/notes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/notes.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/persons.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/persons.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/NotesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/NotesServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/controller/PersonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/persons-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/persons-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +55,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -65,11 +105,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jdk.selected.JAVA_MODULE" value="17.0.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/notes-service" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.16210938" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -87,6 +131,20 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.PersonsServiceApplication">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Consumer" />
+      <module name="untitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NewMain" />
+      <module name="untitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="config-service" />
       <extension name="coverage">
@@ -96,6 +154,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.ConfigServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,6 +194,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.NewMain" />
       <item itemvalue="Spring Boot.NotesServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
@@ -143,8 +204,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PersonsServiceApplication" />
-        <item itemvalue="Spring Boot.ConfigServiceApplication" />
         <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+        <item itemvalue="Spring Boot.ConfigServiceApplication" />
+        <item itemvalue="Application.NewMain" />
+        <item itemvalue="Application.Consumer" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +220,13 @@
       <option name="presentableId" value="Default" />
       <updated>1642952334658</updated>
       <workItem from="1642952339714" duration="5469000" />
-      <workItem from="1643003445705" duration="2254000" />
+      <workItem from="1643003445705" duration="2882000" />
+      <workItem from="1643034311206" duration="315000" />
+      <workItem from="1643173631028" duration="3739000" />
+      <workItem from="1643260053569" duration="1389000" />
+      <workItem from="1643280005586" duration="3348000" />
+      <workItem from="1643283401636" duration="6365000" />
+      <workItem from="1643309790287" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;">
       <created>1643004605961</created>
@@ -173,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643004645574</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed config-import">
+      <created>1643007758855</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643007758855</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +269,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;" />
     <MESSAGE value="changed port for config-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed port for config-service" />
+    <MESSAGE value="changed config-import" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed config-import" />
   </component>
 </project>

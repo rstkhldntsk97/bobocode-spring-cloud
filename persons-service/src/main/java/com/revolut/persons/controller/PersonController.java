@@ -27,9 +27,14 @@ public class PersonController {
         return repository.findAll();
     }
 
-    @GetMapping("/{personId}")
+    @GetMapping("/getPersonWithNotes/{personId}")
     public PersonDto getPersonWithNotes(@PathVariable Long personId) {
         return service.getWithNotesById(personId);
+    }
+
+    @GetMapping("/{id}")
+    public Person getOne(@PathVariable Long id) {
+        return repository.findById(id).orElseThrow();
     }
 
 }
