@@ -3,9 +3,9 @@ server:
 
 spring:
   profiles:
-    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
-          search-locations: file:\\\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service\src\main\resources\config
+        git:
+          uri: https://github.com/rstkhldntsk97/config.git

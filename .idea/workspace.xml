@@ -4,41 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="changed config-import">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_annotations_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circuitbreaker_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circularbuffer_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_consumer_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_core_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_framework_common_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_micrometer_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_ratelimiter_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_retry_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring_boot2_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_timelimiter_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_0_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_match_0_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_circuitbreaker_resilience4j_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_circuitbreaker_resilience4j_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/notes-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/client/PersonServiceFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/dto/NoteDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/dto/PersonDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/service/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bootstrap_3_1_0.xml" beforeDir="false" />
+    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service">
+      <change afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/notes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/notes.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/persons.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/persons.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/NotesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/NotesServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-service/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persons-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/persons-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/test/java/com/revolut/ConfigServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/src/test/java/com/revolut/notes/NotesServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,16 +79,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17.0.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/notes-service" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16210938" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service\src\main\resources" />
       <recent name="C:\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -130,21 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PersonsServiceApplication">
-    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Consumer" />
-      <module name="untitled" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NewMain" />
-      <module name="untitled" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DiscoveryServiceApplication">
     <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="config-service" />
       <extension name="coverage">
@@ -193,9 +153,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="config-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="config-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="discovery-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="discovery-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.Consumer" />
-      <item itemvalue="Application.NewMain" />
+      <item itemvalue="Docker.config-service/Dockerfile" />
+      <item itemvalue="Docker.discovery-service/Dockerfile" />
       <item itemvalue="Spring Boot.NotesServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
@@ -204,10 +182,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PersonsServiceApplication" />
-        <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServiceApplication" />
-        <item itemvalue="Application.NewMain" />
-        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+        <item itemvalue="Docker.discovery-service/Dockerfile" />
+        <item itemvalue="Docker.config-service/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +204,13 @@
       <workItem from="1643260053569" duration="1389000" />
       <workItem from="1643280005586" duration="3348000" />
       <workItem from="1643283401636" duration="6365000" />
-      <workItem from="1643309790287" duration="1263000" />
+      <workItem from="1643309790287" duration="1380000" />
+      <workItem from="1643350542302" duration="2021000" />
+      <workItem from="1643357660647" duration="1195000" />
+      <workItem from="1643395219426" duration="2870000" />
+      <workItem from="1643403616598" duration="3310000" />
+      <workItem from="1643465915071" duration="6917000" />
+      <workItem from="1643544512855" duration="647000" />
     </task>
     <task id="LOCAL-00001" summary="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;">
       <created>1643004605961</created>
@@ -249,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643007758855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service">
+      <created>1643316986180</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643316986181</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +261,7 @@
     <MESSAGE value="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;" />
     <MESSAGE value="changed port for config-service" />
     <MESSAGE value="changed config-import" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed config-import" />
+    <MESSAGE value="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service" />
+    <option name="LAST_COMMIT_MESSAGE" value="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service" />
   </component>
 </project>
