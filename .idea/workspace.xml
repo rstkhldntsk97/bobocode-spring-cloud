@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service">
+    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="migrated configs from file system to git repo">
       <change afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/test/java/com/revolut/ConfigServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-service/src/test/java/com/revolut/notes/NotesServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/persons-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/test/java/com/revolut/persons/PersonsServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServiceApplication">
+  <component name="RunManager" selected="Spring Boot.NotesServiceApplication">
     <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="config-service" />
       <extension name="coverage">
@@ -140,52 +143,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="persons-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revolut.persons.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.persons.PersonsServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="config-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="config-service/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="discovery-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="discovery-service/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.config-service/Dockerfile" />
-      <item itemvalue="Docker.discovery-service/Dockerfile" />
       <item itemvalue="Spring Boot.NotesServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-      <item itemvalue="Spring Boot.PersonsServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PersonsServiceApplication" />
-        <item itemvalue="Spring Boot.ConfigServiceApplication" />
         <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-        <item itemvalue="Docker.discovery-service/Dockerfile" />
-        <item itemvalue="Docker.config-service/Dockerfile" />
+        <item itemvalue="Spring Boot.ConfigServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +176,7 @@
       <workItem from="1643395219426" duration="2870000" />
       <workItem from="1643403616598" duration="3310000" />
       <workItem from="1643465915071" duration="6917000" />
-      <workItem from="1643544512855" duration="647000" />
+      <workItem from="1643544512855" duration="5428000" />
     </task>
     <task id="LOCAL-00001" summary="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;">
       <created>1643004605961</created>
@@ -240,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643316986181</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="migrated configs from file system to git repo">
+      <created>1643545377173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643545377173</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +235,7 @@
     <MESSAGE value="changed port for config-service" />
     <MESSAGE value="changed config-import" />
     <MESSAGE value="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service" />
-    <option name="LAST_COMMIT_MESSAGE" value="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service" />
+    <MESSAGE value="migrated configs from file system to git repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrated configs from file system to git repo" />
   </component>
 </project>

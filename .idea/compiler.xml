@@ -14,7 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="config-service" target="11" />
+      <module name="config-service" target="17" />
       <module name="discovery-service" target="11" />
       <module name="notes-service" target="16" />
       <module name="persons-service" target="17" />
