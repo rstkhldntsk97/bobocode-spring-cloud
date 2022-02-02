@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: users-server
+#  profiles:
+#    active: dev
+  config:
+    import: optional:configserver:http://localhost:8888
+
+management:
+  endpoint:
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -4,9 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="moved eureka startup port definition to config service">
+    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="-added spring cloud api-gateway server;&#10;-disabled notes service for learning goals;">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_classes_2_0_46_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_73_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_core_1_0_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_http_1_0_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_server_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_3_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/revolut/gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/discovery-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/gateway-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/notes-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/users-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/UsersServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/client/NoteClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/dto/NoteDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notes-service/src/main/java/com/revolut/notes/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/PersonsServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/client/NoteClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/controller/PersonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/domain/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/dto/NoteDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/dto/PersonDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/repository/PersonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/java/com/revolut/persons/service/PersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons-service/src/main/resources/application.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +135,15 @@
     </option>
   </component>
   <component name="ProjectId" id="246Y71rCliIidLT91UmCZiHkoPQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -74,9 +154,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17.0.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/notes-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config-service/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16210938" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -85,6 +165,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service\src\main\resources" />
       <recent name="C:\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service" />
@@ -99,9 +182,23 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.NotesServiceApplication">
-    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.UsersServer-2">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="spring-cloud-microservices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="spring-cloud-microservices" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="config-service" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +212,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscoveryServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="discovery-service" />
       <extension name="coverage">
         <pattern>
@@ -124,35 +221,53 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.DiscoveryServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NotesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="notes-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.notes.NotesServiceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="persons-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.persons.PersonsServiceApplication" />
+    <configuration name="GatewayServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.gateway.ApiGatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersServer-1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="users-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revolut.persons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.persons.UsersServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersServer-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="users-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.persons.UsersServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.NotesServiceApplication" />
-      <item itemvalue="Spring Boot.PersonsServiceApplication" />
-      <item itemvalue="Spring Boot.ConfigServiceApplication" />
-      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServer" />
+      <item itemvalue="Spring Boot.UsersServer-2" />
+      <item itemvalue="Spring Boot.ConfigServer" />
+      <item itemvalue="Spring Boot.DiscoveryServer" />
+      <item itemvalue="Spring Boot.UsersServer-1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-        <item itemvalue="Spring Boot.ConfigServiceApplication" />
+        <item itemvalue="Spring Boot.UsersServer-1" />
+        <item itemvalue="Spring Boot.DiscoveryServer" />
+        <item itemvalue="Spring Boot.ConfigServer" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +294,9 @@
       <workItem from="1643465915071" duration="6917000" />
       <workItem from="1643544512855" duration="5593000" />
       <workItem from="1643813651461" duration="64000" />
+      <workItem from="1643813748972" duration="4383000" />
+      <workItem from="1643821851772" duration="985000" />
+      <workItem from="1643823513194" duration="15597000" />
     </task>
     <task id="LOCAL-00001" summary="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;">
       <created>1643004605961</created>
@@ -222,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643572816932</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed to localhost">
+      <created>1643813846901</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643813846901</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,12 +365,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;" />
     <MESSAGE value="changed port for config-service" />
     <MESSAGE value="changed config-import" />
     <MESSAGE value="added circuit breaker to notes service&#10;migrate note service from bootstrap.yml to newer way to startup service" />
     <MESSAGE value="migrated configs from file system to git repo" />
     <MESSAGE value="moved eureka startup port definition to config service" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved eureka startup port definition to config service" />
+    <MESSAGE value="changed to localhost" />
+    <MESSAGE value="-added spring cloud api-gateway server;&#10;-disabled notes service for learning goals;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-added spring cloud api-gateway server;&#10;-disabled notes service for learning goals;" />
   </component>
 </project>

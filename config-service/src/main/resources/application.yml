@@ -2,10 +2,16 @@ server:
   port: 8888
 
 spring:
+  application:
+    name: config-server
   profiles:
-    active: native, git
+    active: native
   cloud:
     config:
+      fail-fast: true
+      discovery.enabled: true
       server:
-        git:
-          uri: https://github.com/rstkhldntsk97/config.git
+        native:
+          search-locations: file:\\\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service\src\main\resources\config
+#        git:
+#          uri: https://github.com/rstkhldntsk97/config.git

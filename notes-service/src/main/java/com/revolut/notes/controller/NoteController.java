@@ -17,8 +17,8 @@ public class NoteController {
     private final NoteRepository repository;
     private final NoteService noteService;
 
-    @GetMapping("/getNoteByPersonId")
-    public List<Note> getNoteByPersonId(@RequestParam Long personId) {
+    @GetMapping("/{personId}")
+    public List<Note> getNoteByPersonId(@PathVariable Long personId) {
         return repository.findAllByPersonId(personId);
     }
 
