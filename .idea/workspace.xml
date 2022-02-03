@@ -4,29 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="-added spring cloud api-gateway server;&#10;-disabled notes service for learning goals;">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/model/CreateUserRequestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/model/CreateUserResponseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/WebSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="-added spring security;&#10;-added support for both types(XML and JSON)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_6_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/model/LoginRequestModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/users-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/users-server.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/UsersServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/UsersServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/dto/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/WebSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +75,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -221,7 +209,7 @@
       <workItem from="1643813748972" duration="4383000" />
       <workItem from="1643821851772" duration="985000" />
       <workItem from="1643823513194" duration="15597000" />
-      <workItem from="1643879267581" duration="12372000" />
+      <workItem from="1643879267581" duration="19616000" />
     </task>
     <task id="LOCAL-00001" summary="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;">
       <created>1643004605961</created>
@@ -272,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643813846901</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-added spring security;&#10;-added support for both types(XML and JSON)">
+      <created>1643895989343</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643895989343</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +294,7 @@
     <MESSAGE value="moved eureka startup port definition to config service" />
     <MESSAGE value="changed to localhost" />
     <MESSAGE value="-added spring cloud api-gateway server;&#10;-disabled notes service for learning goals;" />
-    <option name="LAST_COMMIT_MESSAGE" value="-added spring cloud api-gateway server;&#10;-disabled notes service for learning goals;" />
+    <MESSAGE value="-added spring security;&#10;-added support for both types(XML and JSON)" />
+    <option name="LAST_COMMIT_MESSAGE" value="-added spring security;&#10;-added support for both types(XML and JSON)" />
   </component>
 </project>
