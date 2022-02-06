@@ -4,16 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="-added spring security;&#10;-added support for both types(XML and JSON)">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_6_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/model/LoginRequestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/AuthenticationFilter.java" afterDir="false" />
+    <list default="true" id="4a92328b-7be2-4535-93ce-297f7138d36f" name="Changes" comment="cloud bus">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_http_client_2_1_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_5_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jodah_typetools_0_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_builder_support_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_resolver_provider_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_api_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_connector_basic_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_impl_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_spi_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_transport_file_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_transport_http_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_transport_wagon_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_util_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_inject_0_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_loader_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_bus_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_deployer_resource_maven_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_deployer_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bus_amqp_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_stream_rabbit_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_core_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_amqp_5_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_3_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/revolut/gateway/AuthorizationHeaderFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/java/com/revolut/ConfigServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/java/com/revolut/ConfigServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/discovery-server.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/gateway-server.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/notes-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/users-server.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/UsersServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/UsersServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/security/WebSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/com/revolut/persons/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +176,6 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="Spring Boot.UsersServiceApplication">
     <configuration name="ConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
@@ -156,6 +214,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notes-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.revolut.notes.NotesServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsersServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="users-service" />
       <extension name="coverage">
@@ -171,9 +236,10 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.GatewayServer" />
-      <item itemvalue="Spring Boot.ConfigServer" />
-      <item itemvalue="Spring Boot.DiscoveryServer" />
+      <item itemvalue="Spring Boot.NotesServiceApplication" />
       <item itemvalue="Spring Boot.UsersServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServer" />
+      <item itemvalue="Spring Boot.ConfigServer" />
     </list>
     <recent_temporary>
       <list>
@@ -209,7 +275,12 @@
       <workItem from="1643813748972" duration="4383000" />
       <workItem from="1643821851772" duration="985000" />
       <workItem from="1643823513194" duration="15597000" />
-      <workItem from="1643879267581" duration="19616000" />
+      <workItem from="1643879267581" duration="23474000" />
+      <workItem from="1643964268169" duration="31000" />
+      <workItem from="1644015832586" duration="2885000" />
+      <workItem from="1644075733111" duration="15707000" />
+      <workItem from="1644142073628" duration="13260000" />
+      <workItem from="1644170585369" duration="612000" />
     </task>
     <task id="LOCAL-00001" summary="persons-service: changed legacy &quot;bootstrap.yml&quot; impl on new way to find config using spring.config.import: &quot;optional:configserver:http://localhost:9004&quot;">
       <created>1643004605961</created>
@@ -267,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643895989343</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="-implemented user login functionality&#10;-rewrite path for login">
+      <created>1643905096521</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643905096521</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +373,19 @@
     <MESSAGE value="changed to localhost" />
     <MESSAGE value="-added spring cloud api-gateway server;&#10;-disabled notes service for learning goals;" />
     <MESSAGE value="-added spring security;&#10;-added support for both types(XML and JSON)" />
-    <option name="LAST_COMMIT_MESSAGE" value="-added spring security;&#10;-added support for both types(XML and JSON)" />
+    <MESSAGE value="-implemented user login functionality&#10;-rewrite path for login" />
+    <MESSAGE value="cloud bus" />
+    <option name="LAST_COMMIT_MESSAGE" value="cloud bus" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-gateway/src/main/java/com/revolut/gateway/AuthorizationHeaderFilter.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

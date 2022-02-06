@@ -1,17 +1,30 @@
+encrypt:
+  key: awef789sdfg789JHnnJl98Nnkwn000
+
 server:
   port: 8888
 
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   application:
     name: config-server
   profiles:
-    active: native, git
+    active: git
   cloud:
     config:
       fail-fast: true
       discovery.enabled: true
       server:
-        native:
-          search-locations: file:\\\Users\r.kholodnytskyi\IdeaProjects\spring-cloud-microservices\config-service\src\main\resources\config
         git:
-          uri: https://github.com/rstkhldntsk97/config.git
+          uri: https://github.com/rstkhldntsk97/config-server-properties.git
+          clone-on-start: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
