@@ -4,6 +4,7 @@ import com.revolut.persons.dto.UserDto;
 import com.revolut.persons.entity.UserEntity;
 import com.revolut.persons.model.CreateUserRequestModel;
 import com.revolut.persons.model.CreateUserResponseModel;
+import com.revolut.persons.model.GetUserNotesRequestModel;
 import com.revolut.persons.repository.UserRepository;
 import com.revolut.persons.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -27,10 +28,10 @@ public class UserController {
     private final UserRepository repository;
     private final ModelMapper mapper;
 
-//    @PostMapping("/createUser")
-//    public User createUser(@RequestBody User user) {
-//        return service.createUser(user);
-//    }
+    @GetMapping("/status/check")
+    public String status() {
+        return "Port " + environment.getProperty("local.server.port") + ", with token " + environment.getProperty("token.secret");
+    }
 
     @PostMapping(value = "/createUser",
             consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
@@ -42,39 +43,35 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(responseModel);
     }
 
-    @GetMapping("/status/check")
-    public String status() {
-        return "Port " + environment.getProperty("local.server.port") + ", with token " + environment.getProperty("token.secret");
+    @GetMapping("/getUser/{id}")
+    public UserEntity getUser(@PathVariable Long id) {
+        return repository.findById(id).orElseThrow(() -> new IllegalArgumentException("User with id " + id + " doesn't exist"));
     }
-
-//    @PutMapping("/updateUser/{id}")
-//    public User updateUser(@PathVariable Long id, @RequestBody User user) {
-//        return service.updateUser(id, user);
-//    }
-//
-//    @PatchMapping("/updateUserV2/{id}")
-//    public User updateUserV2(@PathVariable Long id, @RequestBody User user) {
-//        return service.updateUserV2(id, user);
-//    }
-//
-//    @DeleteMapping("/deleteUser/{id}")
-//    public String deleteUser(@PathVariable Long id) {
-//        return service.deleteUser(id);
-//    }
-//
-//    @GetMapping("/getUser/{id}")
-//    public User getUser(@PathVariable Long id) {
-//        return repository.findById(id).orElseThrow(() -> new IllegalArgumentException("User with id " + id + " doesn't exist"));
-//    }
+    //    @PutMapping("/updateUser/{id}")
+    //    public User updateUser(@PathVariable Long id, @RequestBody User user) {
+    //        return service.updateUser(id, user);
+    //    }
+    //
+    //    @PatchMapping("/updateUserV2/{id}")
+    //    public User updateUserV2(@PathVariable Long id, @RequestBody User user) {
+    //        return service.updateUserV2(id, user);
+    //    }
+    //
+    //    @DeleteMapping("/deleteUser/{id}")
+    //    public String deleteUser(@PathVariable Long id) {
+    //        return service.deleteUser(id);
+    //    }
+    //
 //
     @GetMapping
     public List<UserEntity> getAll() {
         return repository.findAll();
     }
 //
-//    @GetMapping("/getPersonNotes/{personId}")
-//    public UserDto getUserWithNotes(@PathVariable Long personId) {
-//        return service.getPersonNotesById(personId);
-//    }
+    @GetMapping("/getPersonNotes/{personId}")
+    public GetUserNotesRequestModel getUserWithNotes(@PathVariable Long personId) {
+        UserDto userDto = service.getPersonNotesById(personId);
+        return mapper.map(userDto, GetUserNotesRequestModel.class);
+    }
 
 }

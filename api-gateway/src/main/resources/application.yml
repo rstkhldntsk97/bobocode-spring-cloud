@@ -24,27 +24,52 @@ spring:
   cloud:
     gateway:
       routes:
+#         status check
         - id: users-status-check
           uri: lb://users-server
           predicates:
-            - Path=/users-server/users/status/check
+            - Path=/users/status/check
             - Method=GET
             - Header=Authorization, Bearer (.*)
           filters:
             - RemoveRequestHeader=Cookie
-            - RewritePath=/users-server/(?<segment>.*), /$\{segment}
             - AuthorizationHeaderFilter
 #         getAll
         - id: users-get-all
           uri: lb://users-server
           predicates:
-            - Path=/users-server/users
+            - Path=/users
             - Method=GET
             - Header=Authorization, Bearer (.*)
           filters:
             - AuthorizationHeaderFilter
             - RemoveRequestHeader=Cookie
-            - RewritePath=/users-server/(?<segment>.*), /$\{segment}
+#         create
+        - id: users-get-all
+          uri: lb://users-server
+          predicates:
+            - Path=/users/createUser
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+#         create
+        - id: login
+          uri: lb://users-server
+          predicates:
+            - Path=/login
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+#         getById
+        - id: getUser
+          uri: lb://users-server
+          predicates:
+            - Path=/users/getUser/**
+            - Method=GET
+            - Header=Authorization, Bearer (.*)
+          filters:
+            - AuthorizationHeaderFilter
+            - RemoveRequestHeader=Cookie
 #        - id: users-create
 #          uri: lb://users-server
 #          predicates:

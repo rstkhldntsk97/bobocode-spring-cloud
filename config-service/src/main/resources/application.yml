@@ -8,8 +8,8 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username: guest
-    password: guest
+    username: '{cipher}db30d101af0aeee60bcd43f0efe35b651392f383b487ebdb75fa3e8d32288380'
+    password: '{cipher}db30d101af0aeee60bcd43f0efe35b651392f383b487ebdb75fa3e8d32288380'
   application:
     name: config-server
   profiles:

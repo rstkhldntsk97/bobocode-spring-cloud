@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "notes")
+@FeignClient(name = "notes-server")
 public interface NoteClient {
 
     @GetMapping("/notes/{userId}")

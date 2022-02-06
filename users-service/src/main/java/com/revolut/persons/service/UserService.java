@@ -1,5 +1,7 @@
 package com.revolut.persons.service;
 
+import com.revolut.persons.client.NoteClient;
+import com.revolut.persons.dto.NoteDto;
 import com.revolut.persons.dto.UserDto;
 import com.revolut.persons.entity.UserEntity;
 import com.revolut.persons.repository.UserRepository;
@@ -16,6 +18,8 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -25,7 +29,7 @@ public class UserService implements UserDetailsService {
     private final UserRepository repository;
     private final ModelMapper mapper;
     private final PasswordEncoder encryptor;
-//    private final NoteClient noteClient;
+    private final NoteClient noteClient;
 
 //    @Transactional
 //    public User createUser(User user) {
@@ -60,6 +64,20 @@ public class UserService implements UserDetailsService {
         return mapper.map(userEntity, UserDto.class);
     }
 
+    public UserDto getPersonNotesById(Long personId) {
+        UserEntity user = repository.findById(personId).orElseThrow();
+        List<NoteDto> userNotes = noteClient.getNoteByUserId(user.getId());
+        UserDto userDto = mapper.map(user, UserDto.class);
+        userDto.setNotes(userNotes);
+        return userDto;
+    }
+
+    //    public UserDto getPersonNotesById(Long personId) {
+//        User user = userRepository.findById(personId).orElseThrow();
+//        List<NoteDto> userNotes = noteClient.getNoteByUserId(personId);
+//        return new UserDto(user.getFirstName(), user.getLastName(), userNotes);
+//    }
+
 //    @Transactional
 //    public User updateUser(Long id, User user) {
 //        User persistUser = repository.findById(id).orElseThrow();
@@ -91,9 +109,5 @@ public class UserService implements UserDetailsService {
 //        return persistUser;
 //    }
 
-    //    public UserDto getPersonNotesById(Long personId) {
-//        User user = userRepository.findById(personId).orElseThrow();
-//        List<NoteDto> userNotes = noteClient.getNoteByUserId(personId);
-//        return new UserDto(user.getFirstName(), user.getLastName(), userNotes);
-//    }
+
 }

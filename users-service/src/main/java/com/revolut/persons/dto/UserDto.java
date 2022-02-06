@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.List;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 public class UserDto implements Serializable {
 
@@ -26,5 +26,7 @@ public class UserDto implements Serializable {
     private String userId;
 
     private String encryptedPassword;
+
+    private List<NoteDto> notes;
 
 }

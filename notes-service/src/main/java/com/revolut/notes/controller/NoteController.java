@@ -1,6 +1,6 @@
 package com.revolut.notes.controller;
 
-import com.revolut.notes.domain.Note;
+import com.revolut.notes.entity.Note;
 import com.revolut.notes.dto.NoteDto;
 import com.revolut.notes.repository.NoteRepository;
 import com.revolut.notes.service.NoteService;
@@ -22,7 +22,7 @@ public class NoteController {
         return repository.findAllByPersonId(personId);
     }
 
-    @PostMapping
+    @PostMapping("/createNote")
     public Note createNote(@RequestBody Note note) {
         return repository.save(note);
     }

@@ -1,4 +1,4 @@
-package com.revolut.notes.domain;
+package com.revolut.notes.entity;
 
 import lombok.*;
 

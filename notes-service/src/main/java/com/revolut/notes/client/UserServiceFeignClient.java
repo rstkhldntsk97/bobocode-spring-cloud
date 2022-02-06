@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name = "persons")
-public interface PersonServiceFeignClient {
+public interface UserServiceFeignClient {
 
     @GetMapping("/persons/{id}")
     @CircuitBreaker(name = "persons", fallbackMethod = "defaultPerson")
@@ -15,6 +15,6 @@ public interface PersonServiceFeignClient {
 
 
     default PersonDto defaultPerson(Long id, Throwable throwable) {
-        return new PersonDto(id, "HIDDEN", "HIDDEN");
+        return new PersonDto(id, "HIDDEN");
     }
 }

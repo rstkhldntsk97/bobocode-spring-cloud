@@ -1,6 +1,6 @@
 package com.revolut.notes.repository;
 
-import com.revolut.notes.domain.Note;
+import com.revolut.notes.entity.Note;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
