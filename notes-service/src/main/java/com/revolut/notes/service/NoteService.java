@@ -23,7 +23,7 @@ public class NoteService {
     }
 
     private NoteDto convertToDto(Note note) {
-        var person = client.getById(note.getPersonId());
+        var person = client.getById(note.getUserId());
         return new NoteDto(note.getId(), note.getBody(), person);
     }
 

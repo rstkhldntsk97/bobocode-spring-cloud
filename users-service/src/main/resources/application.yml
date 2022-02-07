@@ -14,3 +14,7 @@ management:
     web:
       exposure:
         include: "*"
+
+logging:
+  level:
+    com.revolut.persons.client.NoteClient: DEBUG

@@ -68,9 +68,9 @@ public class UserController {
         return repository.findAll();
     }
 //
-    @GetMapping("/getPersonNotes/{personId}")
-    public GetUserNotesRequestModel getUserWithNotes(@PathVariable Long personId) {
-        UserDto userDto = service.getPersonNotesById(personId);
+    @GetMapping("/getUserNotes/{userId}")
+    public GetUserNotesRequestModel getUserWithNotes(@PathVariable Long userId) {
+        UserDto userDto = service.getPersonNotesById(userId);
         return mapper.map(userDto, GetUserNotesRequestModel.class);
     }
 
